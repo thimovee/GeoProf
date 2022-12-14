@@ -1,0 +1,49 @@
+﻿@page
+@model ProjectGeoProfs.Pages.Verlof.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>VerlofAanvraag</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VerlofAanvraag.VolledigeNaam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VerlofAanvraag.VolledigeNaam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VerlofAanvraag.Sector)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VerlofAanvraag.Sector)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VerlofAanvraag.VerlofBeginDatum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VerlofAanvraag.VerlofBeginDatum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VerlofAanvraag.VerlofEindDatum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VerlofAanvraag.VerlofEindDatum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VerlofAanvraag.VerlofReden)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VerlofAanvraag.VerlofReden)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.VerlofAanvraag?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

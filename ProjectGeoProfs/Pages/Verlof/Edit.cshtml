@@ -1,0 +1,55 @@
+﻿@page
+@model ProjectGeoProfs.Pages.Verlof.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>VerlofAanvraag</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VerlofAanvraag.Id" />
+            <div class="form-group">
+                <label asp-for="VerlofAanvraag.VolledigeNaam" class="control-label"></label>
+                <input asp-for="VerlofAanvraag.VolledigeNaam" class="form-control" />
+                <span asp-validation-for="VerlofAanvraag.VolledigeNaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerlofAanvraag.Sector" class="control-label"></label>
+                <input asp-for="VerlofAanvraag.Sector" class="form-control" />
+                <span asp-validation-for="VerlofAanvraag.Sector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerlofAanvraag.VerlofBeginDatum" class="control-label"></label>
+                <input asp-for="VerlofAanvraag.VerlofBeginDatum" class="form-control" />
+                <span asp-validation-for="VerlofAanvraag.VerlofBeginDatum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerlofAanvraag.VerlofEindDatum" class="control-label"></label>
+                <input asp-for="VerlofAanvraag.VerlofEindDatum" class="form-control" />
+                <span asp-validation-for="VerlofAanvraag.VerlofEindDatum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerlofAanvraag.VerlofReden" class="control-label"></label>
+                <input asp-for="VerlofAanvraag.VerlofReden" class="form-control" />
+                <span asp-validation-for="VerlofAanvraag.VerlofReden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
