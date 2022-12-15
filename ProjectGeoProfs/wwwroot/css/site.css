@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  overflow-x:hidden;
 }
 
 @media (min-width: 768px) {
@@ -19,4 +20,72 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.deletebutton {
+ background:#dc3545;
+ color:white;
+ border:none;
+ height:40px;
+ width:40px;
+ border-radius:5px;
+}
+.viewbutton {
+    background: #007bff;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.approvebutton {
+    background: #28a745;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.svgg{
+    width:20px;
+    height:20px;
+}
+.svgg:hover{
+    color:white;
+}
+.trr {
+    color: rgb(98, 98, 98);
+    background: #f2f2f2;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+table {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+nav{
+    background:#292929;
+    color:white;
+}
+a:hover{
+    color:white;
+}
+footer{
+    background:#292929;
+}
+
+form {
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    background:#292929;
+    color:white;
+    padding:40px;
+    border-radius:10px;
 }

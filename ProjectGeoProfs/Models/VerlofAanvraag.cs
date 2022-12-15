@@ -4,6 +4,7 @@ namespace ProjectGeoProfs.Models
 {
     public class VerlofAanvraag
     {
+        [Display(Name = "ID")]
         public int Id { get; set; }
         [Display(Name = "Volledige Naam")]
         public string? VolledigeNaam { get; set; }
@@ -16,5 +17,6 @@ namespace ProjectGeoProfs.Models
         public DateTime VerlofEindDatum { get; set; }
         [Display(Name = "Verlof Reden")]
         public string? VerlofReden { get; set; }
+        public bool Geaccepteerd { get; set; }
     }
 }
