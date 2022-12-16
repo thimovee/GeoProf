@@ -4,42 +4,42 @@
 @{
     ViewData["Title"] = "Create";
 }
-        <form method="post">
+        <form class="create" method="post">
+            <div class="center">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group w-80 mx-auto">
                 <label asp-for="VerlofAanvraag.VolledigeNaam" class="control-label"></label>
                 <input asp-for="VerlofAanvraag.VolledigeNaam" class="form-control" />
                 <span asp-validation-for="VerlofAanvraag.VolledigeNaam" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group w-80 mx-auto">
                 <label asp-for="VerlofAanvraag.Sector" class="control-label"></label>
                 <input asp-for="VerlofAanvraag.Sector" class="form-control" />
                 <span asp-validation-for="VerlofAanvraag.Sector" class="text-danger"></span>
             </div>
-            <div class="form-group">
+    <div class="form-group d-flex mx-auto gap-2">
+                <div class="w-40 ml-auto">
                 <label asp-for="VerlofAanvraag.VerlofBeginDatum" class="control-label"></label>
                 <input asp-for="VerlofAanvraag.VerlofBeginDatum" class="form-control" />
                 <span asp-validation-for="VerlofAanvraag.VerlofBeginDatum" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+        </div>
+        <div class="w-40 mr-auto">
                 <label asp-for="VerlofAanvraag.VerlofEindDatum" class="control-label"></label>
                 <input asp-for="VerlofAanvraag.VerlofEindDatum" class="form-control" />
                 <span asp-validation-for="VerlofAanvraag.VerlofEindDatum" class="text-danger"></span>
+        </div>
             </div>
-            <div class="form-group">
+    <div class="form-group w-80 mx-auto">
                 <label asp-for="VerlofAanvraag.VerlofReden" class="control-label"></label>
-                <input asp-for="VerlofAanvraag.VerlofReden" class="form-control" />
+                <input asp-for="VerlofAanvraag.VerlofReden" class=" input-box" />
                 <span asp-validation-for="VerlofAanvraag.VerlofReden" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Aanvragen" class="btn btn-primary" />
+    <div class="form-group mx-auto w-40 mt-4">
+            <button type="button" class="btn btn-danger"><a asp-page="/">Annuleren</a></button>
+        <input type="submit" value="Aanvragen" class="btn btn-primary" />
             </div>
+    </div>
         </form>
-
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
-<div class="blob1"></div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

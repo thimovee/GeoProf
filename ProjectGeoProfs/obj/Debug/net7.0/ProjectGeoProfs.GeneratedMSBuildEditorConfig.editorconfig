@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectGeoProfs
 build_property.RootNamespace = ProjectGeoProfs
-build_property.ProjectDir = C:\Users\Thimo\Source\Repos\GeoProfs\ProjectGeoProfs\
+build_property.ProjectDir = C:\Users\thimo\source\repos\ProjectGeoProfs\ProjectGeoProfs\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Thimo\Source\Repos\GeoProfs\ProjectGeoProfs
+build_property.MSBuildProjectDirectory = C:\Users\thimo\source\repos\ProjectGeoProfs\ProjectGeoProfs
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Error.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Index.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Verlof/Create.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Verlof/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVybG9mXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Verlof/Delete.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Verlof/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVybG9mXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Verlof/Details.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Verlof/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVybG9mXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Verlof/Edit.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Verlof/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVybG9mXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Verlof/Index.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Verlof/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVybG9mXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/_ViewImports.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/_ViewStart.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Thimo/Source/Repos/GeoProfs/ProjectGeoProfs/Pages/Shared/_Layout.cshtml]
+[C:/Users/thimo/source/repos/ProjectGeoProfs/ProjectGeoProfs/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yhi129h8rs
