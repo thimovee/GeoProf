@@ -1,12 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ProjectGeoProfs.Data;
+using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ProjectGeoProfsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProjectGeoProfsContext") ?? throw new InvalidOperationException("Connection string 'ProjectGeoProfsContext' not found.")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ProjectGeoProfsContext>();
 
 var app = builder.Build();
 

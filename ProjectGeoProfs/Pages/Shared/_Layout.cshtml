@@ -19,11 +19,14 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="mx-xl-5">
+                        <li class="mx-xl-3">
                             <a class="nav-link text-white" href="/Verlof">Verlof</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-white" href="/Gebruikers">Gebruikers</a>
+                        <li class="mx-xl-3">
+                            <a asp-area="Identity" asp-page="/Account/Login" class="nav-link text-white">Login</a>
+                        </li>
+                        <li class="mx-xl-3">
+                            <a asp-area="Identity" asp-page="/Account/Register" class="nav-link text-white">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -35,12 +38,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class=" footer text-muted">
-        <div class="container">
-            &copy; 2022 - GeoProfs
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
