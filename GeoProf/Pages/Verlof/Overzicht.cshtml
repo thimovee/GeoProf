@@ -1,0 +1,79 @@
+﻿@page
+@model GeoProf.Pages.Verlof.OverzichtModel
+
+@{
+    ViewData["Title"] = "Verlofaanvragen";
+}
+<div class="tablecontainer">
+    <h4>Laat nu alleen verlofaanvragen zien die "ICT" als sector hebben. <br />Later op basis van de sector van de ingelogde user</h4>
+    <table class="table">
+        <thead>
+            <tr class="trr">
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].Id)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].VolledigeNaam)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].Sector)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].VerlofBeginDatum)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].VerlofEindDatum)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].VerlofReden)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    @Html.DisplayNameFor(model => model.VerlofAanvraag[0].Geaccepteerd)
+                </th>
+                <th style="border-bottom-width: 0px;">
+                    Acties
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.VerlofAanvraag.Where(i => i.Sector == "ICT"))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VolledigeNaam)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sector)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VerlofBeginDatum)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VerlofEindDatum)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VerlofReden)
+                    </td>
+                    <td>
+                        @if (item.Geaccepteerd == true)
+                        {
+                            <span>Ja</span>
+                        }
+                        else
+                        {
+                            <span>Nee</span>
+                        }
+                    </td>
+                    <td>
+                        <button class="viewbutton"><a asp-page="./Details" asp-route-id="@item.Id"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill svgg" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" /><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" /></svg></a></button>
+                        <button class="deletebutton"><a asp-page="./Delete" asp-route-id="@item.Id"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill svgg" viewBox="0 0 16 16"><path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" /></svg></a></button>
+                        <button class="approvebutton"><a asp-page="./Edit" asp-route-id="@item.Id"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg svgg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" /></svg></a></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
