@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thimo\\Source\\Repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj": {}
+    "C:\\Users\\Thimo\\source\\repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thimo\\Source\\Repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj": {
+    "C:\\Users\\Thimo\\source\\repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thimo\\Source\\Repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj",
+        "projectUniqueName": "C:\\Users\\Thimo\\source\\repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj",
         "projectName": "ProjectGeoProfs",
-        "projectPath": "C:\\Users\\Thimo\\Source\\Repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj",
+        "projectPath": "C:\\Users\\Thimo\\source\\repos\\GeoProf\\ProjectGeoProfs\\ProjectGeoProfs.csproj",
         "packagesPath": "C:\\Users\\Thimo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thimo\\Source\\Repos\\GeoProf\\ProjectGeoProfs\\obj\\",
+        "outputPath": "C:\\Users\\Thimo\\source\\repos\\GeoProf\\ProjectGeoProfs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thimo\\AppData\\Roaming\\NuGet\\NuGet.Config",
